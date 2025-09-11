@@ -49,6 +49,7 @@ namespace Tumakov
             double x2 = (-b - Math.Sqrt(b * b - 4 * a * c)) / 2.0;
             Console.WriteLine($"{x1} {x2}");
             Console.ReadKey();
+
         }
     }
 }
