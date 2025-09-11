@@ -161,7 +161,6 @@ namespace Lapytova
             sum1 = h1 + h3 + h5 + h7 + h9 + h11 + (h2 + h4 + h6 + h8 + h10 + h12) * 3;
             Console.WriteLine((10 - (sum1 % 10)) % 10);
             Console.ReadKey();
-
         }
     }
 }
