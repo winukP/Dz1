@@ -60,8 +60,8 @@ namespace Lapytova
             Console.WriteLine((num1 + num2) / 2.0);
             Console.WriteLine(Math.Sqrt(num1 * num2));
             //12
-            double x1 = 7.123;
-            double x2 = 5.789;
+            x1 = 7.123;
+            x2 = 5.789;
             double y1 = 2.456;
             double y2 = 9.234;
             double dist = Math.Sqrt((x2 - x1)* (x2 - x1) + (y2 - y1)*(y2 - y1));
@@ -124,25 +124,27 @@ namespace Lapytova
             Console.WriteLine("Можешь ли ты рассказать о ней?");
             Console.WriteLine("Нет");
             Thread.Sleep(5000);
-            Random random = new Random();
-            Console.ForegroundColor = (ConsoleColor)random.Next(1,15);
             Console.WriteLine("но могу показать");
+            Thread.Sleep(1000);
+            Random random1 = new Random();
+            Console.BackgroundColor = (ConsoleColor)random1.Next(0, 15);
+            Console.Clear();
             //20
             //a
-            Random random = new Random();
+            Random random2 = new Random();
             int h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12;
-            h1 = random.Next(0, 10);
-            h2 = random.Next(0, 10);
-            h3 = random.Next(0, 10);
-            h4 = random.Next(0, 10);
-            h5 = random.Next(0, 10);
-            h6 = random.Next(0, 10);
-            h7 = random.Next(0, 10);
-            h8 = random.Next(0, 10);
-            h9 = random.Next(0, 10);
-            h10 = random.Next(0, 10);
-            h11 = random.Next(0, 10);
-            h12 = random.Next(0, 10);
+            h1 = random2.Next(0, 10);
+            h2 = random2.Next(0, 10);
+            h3 = random2.Next(0, 10);
+            h4 = random2.Next(0, 10);
+            h5 = random2.Next(0, 10);
+            h6 = random2.Next(0, 10);
+            h7 = random2.Next(0, 10);
+            h8 = random2.Next(0, 10);
+            h9 = random2.Next(0, 10);
+            h10 = random2.Next(0, 10);
+            h11 = random2.Next(0, 10);
+            h12 = random2.Next(0, 10);
             int sum1 = h1 + h3 + h5 + h7 + h9 + h11+(h2 + h4 + h6 + h8 + h10 + h12) * 3;
             Console.WriteLine((10 - (sum1 % 10)) % 10);
             //b
@@ -161,7 +163,6 @@ namespace Lapytova
             sum1 = h1 + h3 + h5 + h7 + h9 + h11 + (h2 + h4 + h6 + h8 + h10 + h12) * 3;
             Console.WriteLine((10 - (sum1 % 10)) % 10);
             Console.ReadKey();
-
         }
     }
 }
